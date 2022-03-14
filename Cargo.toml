@@ -1,0 +1,19 @@
+[package]
+name = "cryptocrack"
+version = "0.1.0"
+edition = "2021"
+author = ["grng3r <grng3r@protonmail.com>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sha-1 = "0.9"
+hex = "0.4"
+serde_json = "1.0"
+rsa = "0.5.0"
+num-integer = "0.1"
+num-bigint = { version = "0.7.0", features = ["i128", "u64_digit", "prime", "zeroize"], default-features = false, package = "num-bigint-dig" }
+
+[lib]
+name = "cryptoattack"
+path = "src/lib.rs"
